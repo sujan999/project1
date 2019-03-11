@@ -1,0 +1,18 @@
+/***Home page css***/
+.brand
+{
+	width: 200px
+}
+
+.navbar{
+	margin-left: 150px
+}
+.navbar a {
+	margin-right: 50px
+}
+.navbar a:last-child{
+	margin-right:0
+}
+
+
+/*End of Home page  css */
