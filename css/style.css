@@ -1,18 +1,62 @@
-/***Home page css***/
+ /*General*/
+ body {
+ 	margin:0px
+ }
+
+
+
+
+ /***Home page css***/
 .brand
 {
-	width: 200px
+	width: 145px;
 }
 
-.navbar{
+.nav{
 	margin-left: 150px
 }
-.navbar a {
-	margin-right: 50px
+.nav a {
+	text-decoration: none;
+	text-transform:uppercase;
+	margin-right: 50px;
 }
-.navbar a:last-child{
-	margin-right:0
+.nav a:last-child{
+	margin-right:0;
+}
+.navbar{
+
+	position:fixed;
+	width: 100%;
+    height: 100px;
+	top:0;
+	left:0;
+	background-color: lightgray;
+	padding:20px;
+
 }
 
+.nav a:hover{
+	font-weight: bold;
+}
+.cover-image {
+	margin-top: 80px;
+}
+.cover-image img {
+	width: 100%
+}
+.about-section {
+	padding:  0 25px;
+}
+.about-section h3 {
+	letter-spacing:0.3em;
+	font-size: 3vw;
+	text-align: center;
+}
+.about-section p {
+	word-spacing: 10px;
+	letter-spacing:0.2em;
+	text-align: center;
+	line-height: 25px
+}
 
 /*End of Home page  css */
