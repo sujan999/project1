@@ -1,223 +1,234 @@
-// //terneary operator
+// // //console.log(document);
+
+// // /*  console.dir(document);
+// // document.title = "Title is new"
+// // console.log(document.title); */
 
 
-// //let count=2;
-// //count>5?console.log("greater"):console.log("samaller");
-// //condition ?if true do this :elase do this;
+// // // selectors
+// // //1.select by id 
+
+// // /*
+// // var footerEl = document.getElementById("my-footer");
+// // console.log(footerEl);
+
+// // console.log(footerEl.innerText);
+
+// // var aboutEl =document.getElementById("about-title-text");
+// // aboutEl.innerText = 'About Us'
+// // console.log(aboutEl);
+// // console.log(aboutEl.innerText);  */
+
+// // /*
+// //  var testDivEl = document.getElementsByClassName("test-div");
+// //  console.log(testDivEl)
+
+// //  //console.log(testDivEl[2].innerText);
+
+// //  for(let i=0; i<testDivEl.length; i++){
+// //      testDivEl[i].style.color = "red";
+// //      testDivEl[i].style.borderBottom = "1px blue solid";
+
+// //      console.dir(testDivEl[i]);
+// //     // console.log(testDivEl[i].innerText);
+// //  }
+// // */
 
 
-// //var a=26;
-// //function checkScope(){
-//     //console.log(a);
+// // //---query selector(),query selector All()
 
-// //}
-// //checkScope();
-// //console.log(a);
+// // /*
+// // var cardsEl = document.querySelectorAll('.card');
+// // console.dir(cardsEl);
+// // */
+
+// // // parent child
+// // /*
+// // var childEl = document.getElementById("testOne");
+// // console.dir(childEl);
+
+// // var parentEl = childEl.parentNode;
+
+// // console.dir(childEl.parentNode);
+// // */
+
+
+// // /*
+// // function handleBtnClick(el){
+// //     el.innerText = "clicked";
+// //     console.dir(el);
+
+// // }
+// // */
+
+// // /*
+
+// // var clickBtn = document.getElementById("clickBtn");
+// // var childEl = document.getElementById("testOne");
+// // console.dir(childEl);
+
+// // clickBtn.onclick =  function(){
+// //     childEl.style.color = "red";
+// //     childEl.style.fontSize = "150px";
+// //     childEl.style.fontWeight = "bold";
+// //     clickBtn.innerText= "Nicely clicked !!";
+// //     console.log("clickedddd");
+// // }
+// // */
+
+// // /*
+
+// // //create new html element using  createElement()
+
+// // var newP =document.createElement("p");
+
+// // //assign new  class name to newly created paragraph element
+// // newP.className="normal";
+
+// // //setting inner text of paragraph element
+// // newP.innerText = "This is new paragraphhhhhhhhhhhhhhhh!!!!";
+// // console.dir(newP);
+
+// // //setting up new attribute  and its  value 
+// // newP.setAttribute("id","new-element");
+// // console.log(newP);
+
+// // var newEl =document.getElementById("new-element");
+// // newEl.appendChild(newP);
+// // */
 
 
 
-//  /*var string="waited for 3 $"
-// console.log("Execution started...");
-// setTimeout(function(){
-//     console.log(string);
-// },1000) */
+// // /* wrong try.......
+// // var clickHere = document.getElementById("clickHere");
+// // var newclick = document.getElementById("newclick");
+// // clickHere.onclick = function(){
+// //     var newP = document.createElement("p");
+// // newP.innerText = "This is new paragraph";
+// // newP.setAttribute("id","new-click");
+// // var newEl = document.getElementById("new-click");
+// // newclick.appendChild(newP):
+// // }
+// //  */
+
+// // /*
+// // var textGeneratorBtn = document.getElementById("text-generator");
+// // var generatedTextDiv = document.getElementById("generated-text");
+
+// // textGeneratorBtn.onclick = function(){
+// //     var newTextPara = document.createElement('p');
+// //     newTextPara.innerText = "this is newly generated";
+// //     generatedTextDiv.appendChild(newTextPara);
+// // }
+
+// // */
+// // /*
+
+// // var mynewBtn = document.getElementById("text-generator");
+// // var generatedTextDiv = document.getElementById("generated-text");
+
+// // textGeneratorBtn.ondblclick = function(){
+// //   */
+ 
+// // var newInput = document.querySelector("#id-name");
+// // var typedValue = document.querySelector("#typedValue");
+// // console.log(newInput);
+
+// // newInput.onkeydown= function(e){
+// //     var result =e.target.value;
+// //    // typedValue.innerText = result;
+// //     var integerResult =parseInt(result);
+
+// //     if(isNaN(integerResult)){
+// //         typedValue.innerText = "please enter valid number";
+
+// //     }else{
+// //         typedValue.innerText =result;
+// //     }
 
 
-
-
-// //count..
-// //10,9,8.....0
-
-// /*   var counter = 10;
-
-// function countTo(){
-//     setTimeout(function(){
-//         if(counter>=0){
-//             console.log("count::"+ counter--);
-//             countTo();
-//         }else {
-//             console.log("JOB DONE");
-//         }
-        
-//     },1000)
-
+// //     console.log(integerResult)
+// //     // console.log(result);
+// //     //console.log(typeof result);
+// // }
     
-// }
-// countTo();    */
-
-
-
-// /*  (function(){
-//     console.log("Nice");
-// })();  */
-
-
-
-// // Assignment......
-
-//  /*  var timeoutHandle;
-
-//   function countdown(minutes, seconds) {
-//     var seconds = 60;
-//     var mins = minutes
-
-//     function tick() {
-//       var counter = document.getElementById("timer");
-//       var current_minutes = mins - 1
-//       seconds--;
-//       counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
-//       if (seconds > 0) {
-//         timeoutHandle = setTimeout(tick, 1000);
-//       } else {
-
-//         if (mins > 1) {
-
-//           // countdown(mins-1);   never reach “00″ issue solved:Contributed by Victor Streithorst
-//           setTimeout(function() {
-//             countdown(mins - 1);
-//           }, 1000);
-
-//         }
-//       }
-//     }
-//     tick();
-//   }
-
-//   countdown(2);  */
-
-// /** 
-// // countdown.....//
-
-
-// function countDown(time){
-//   //calculate minutes
-//    var min = math.floor(time/60);
    
-//    //calculate seconds 
-//    var sec = time-(min*60);
 
-//    //time out function with 1 seconds delay 
-//    setTimeout(function(){
-
-//     //counting up to zero seconds
-//     if (time>=0){
-
-//       //desired output
-//       console.log(min + ":" + sec);
-       
-//       //recursion
-//       countDown(--time);
-
-//     }else {
-
-//       //after the counting is done
-//       console.log("finished");
-
-//     }
-//    },1000);
-    
-// }
-
-
-
-// countDown(80);     */
-
-// /*
-// function mySquareRoot(number){
-//   var result = number*number ;
-//   //console.log(result);
-//   return result;
-// }
-
-// //mySquareRoot(5);
-
-// var result5 = mySquareRoot(5);
-// //result5 = result;
-
-// var result6= mySquareRoot(6);
-// console.log(result5);
-
-// console.log(result6);   */
-
-
-
-// /** 
-// function one(){
-//   return function(){
-//     console.log("returned from function one");
-
-//   }
-// }
-
-// one();
-// */
-
-
-// function test(){
-//   return "called test";
-//   console.log("called test");
-
-// }
-// var result = test();
-// console.log(result);
-
-
-var car = {
-  name: 'BMW', //property
-  year: 2018, //property 
-  madeIn: 'USA', //property
-  parts :{
-    name: "Engine",
-    type: "solid",
-    condition: "ok",
-    renewed: true,
-    printDetail: function(){
-      console.log("engine detail");
-    }
-  },
-  getDetail: function(){
-    //this=car
-    console.log(this.name + "was made in " + this.madeIn + " in " + this.year);
-  }, //method 
-
-  getMadeIn: function(){
-    return this.madeIn;
-  } //method
-}
-//to access the object properties  and method 
-//we use member access operator "."(dot)
-//console.log()
-
-console.log(car.name, car.year,car.madeIn,car.getDetail());
-console.log(car.name, car.parts.renewed);
-
-car.name = "sujan";
-car['build']= 'Metal';
-car.hero ="nice";
-
-//console.log(car);
- console.log(car['newProperty']);
- console.log(car.newProperty);
-
-
-
-
- var anotherCar ={
-   name:"Toyota ",
-   year: 2018,
-   parts :[
+// // Array methods.....
+ var students =[
      {
-       name:"Engine",
-       sarviced: true,
-     },
-     {
-        name: "clutch",
-        sarviced: false,
-     }
-   ],
-   printDetail: function(){
-     console.log(this.name)
-   }
- }
+         name:"sujan koirala",
+         college:"swastik",
+          dob:"1996",
+      },
+      {
+         name:"rujan koirala",
+         college:"IOE",
+         dob:"1986",
+      },
+      {
+         name:"pujan koirala",
+         college:"samajik",
+         dob:"1978",
+      },
+  ];
 
- console.log(anotherCar.parts[1].sarviced);
+//  //array.map()
+
+//  students.map(function(student, index, array){
+//      console.log(index + " " + student.name);
+
+//  });
+
+
+//  var mappdeData = students.map(function(student){   //callback function//
+//      return student.dob;
+//  });
+
+//  var arrayOne = [1,2,3,4,5,6];
+//  var square = arrayOne.map(function(arr){    //callback function//
+//      return arr*2;
+//  });
+// console.log(square);
+
+
+//  console.log(mappdeData);
+
+
+
+
+
+var studentList = document.querySelector("#student-list");
+var studentTable = document.querySelector("#student-table");
+console.log(studentList);
+
+//looping through each array element
+students.forEach(function(student, index){
+
+    //creating li for each student
+   // var listEl = document.createElement("li");
+
+   studentTable.innerHTML += `
+   <tr>
+       <td>${index+1}</td>
+       <td>${student.name}</td>
+       <td>${student.college}</td>
+       <td>${student.dob}</td>
+
+   </tr>`
+
+    /*
+    listEl.innerText = student.name;
+    studentList.appendChild(listEl);
+    */
+});
+
+/*
+//var forInnerHTML = document.querySelector("#forInnerHTML");
+//forInnerHTML.innerHTML = "<h3>This is inserted HTML</h3><p>This is new insertefd paragraph</P>";
+//forInnerHTML
+
+*/
+
+
+

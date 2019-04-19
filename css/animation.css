@@ -1,0 +1,15 @@
+#header{
+    
+
+    height: 30px;
+    width: 200px;
+    background-color: lightgrey;
+}
+
+#body{
+    position: relative;
+    margin-top: 10px;
+    height: 250px;
+    width: 150px;
+    border: 2px solid lightgreen;
+}

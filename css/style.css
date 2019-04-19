@@ -4,6 +4,19 @@
  	margin:0px
  }
 
+
+ .active {
+	 color: red;
+	 font-weight: bold;
+	 text-decoration:underline;
+ }
+
+ .normal {
+	 color: inherit;
+	 font-weight: 100px;
+	 text-decoration: none;
+ }
+
  .container{
  	padding: 15px;
  }
